@@ -20,7 +20,7 @@
 ### Links
 
 - Solution URL: [https://github.com/Rachy112/Rachael-gabriel](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://rachaelgabrielproject.netlify.app](https://your-live-site-url.com)
 
 ## My process
 
