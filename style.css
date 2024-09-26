@@ -1,0 +1,318 @@
+ * {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/background.png);
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo-img {
+    width: 10%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+} 
+
+nav a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+} 
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    margin-top: 50px;
+} 
+
+ .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+} 
+
+.navbar .flex {
+    justify-content: space-between;
+} 
+
+.search-box {
+    background-color: light grey;
+    padding: 5px 10px 5px;
+    input[type="text"] {
+        border: none;
+        background-color: transparent;
+        &:focus{
+            outline: none;
+        }
+    }
+    placeholder{
+        color: grey;
+    }
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #cbc1ae
+} 
+
+.search-box a {
+    border-right: 3px solid;
+}
+
+
+.content {
+    position: absolute;
+    top: 33%;
+    left: 7%;
+    z-index: 12;
+}
+
+.hello {
+    color: #6c6978;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.content .name {
+    color: #6c6978;
+    font-size: 40px;
+    font-weight: 600;
+    margin: -20px 0 0 -3px;
+}
+
+.content .note {
+    color: #6c6978;
+    display: flex;
+    margin-top: 10px;
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.content .second {
+    color: #26f7fd;
+} 
+
+.content .first {
+    color: #26f7fd;
+}
+
+.btn {
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px 5px;
+    margin: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(135deg, #26f7fd 30%, #a865b5 50%);
+}
+
+.btn-1 {
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px;
+    background-image: linear-gradient(135deg, #90d5ff 30%, #a865b5 50%);
+}  
+
+.steps .girl-img {
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    right: 80px;
+    position: absolute;
+}
+
+header .social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+} 
+
+.social a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #2c3350;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+header .content .note {
+    color: #6c6978;
+    margin: 5px 0;
+    font-size: 40px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.content .note .text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+    margin-left: 10px;
+    animation: typing 5s steps(17) infinite;
+}
+
+@keyframes typing {
+    0% {width: 0ch;}
+    50% {width: 16ch;}
+    100% {width: 0ch;}
+}
+
+
+
+
+
+
+
+/* button {
+    border-radius: 5px 10px 5px;
+    padding: 5px 10px 5px;
+    background-color: #fff;
+}  */
+
+/* .steps {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+   justify-content: center;
+   align-items: center;
+   padding-right: 20px;
+   overflow: auto;
+}
+
+
+.mother {
+   max-width: 1100px;
+   margin: 0 auto;
+   height: 100%; */
+    /* padding: 0 20px; */
+    
+/* } 
+
+.developer {
+    width: 200%;
+    margin-left: 80px;
+    margin-bottom: 10px; 
+    white-space: no-wrap;
+} 
+
+  .ending {
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    bottom: 0;
+}
+
+.hello, h1 {
+    color: #6c6978;
+}
+
+.name {
+    margin-bottom: 20px;
+}
+
+.grid h2 {
+    margin-bottom: 20px;
+}
+
+.steps .grid h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #474973;
+}
+
+.steps .grid h2 {
+    font-size: 25px;
+    color: #333;
+}
+
+.content {
+    width: 400px;
+}
+
+.btn {
+    color: #fff;
+    padding: 5px 10px 5px;
+    margin: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(135deg, #26f7fd 30%, #a865b5 50%);
+}
+
+.btn-1 {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 5px;
+    background-image: linear-gradient(135deg, #90d5ff 30%, #a865b5 50%);
+}  
+
+ .girl-img {
+    margin-top: -50px; 
+    z-index: -1;
+} 
+
+.footer, .social a {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.social {
+    margin-right: 10px;
+    margin-top: 350px;
+    margin-left: 15px;
+}
+
+ p {
+    width: 0%;
+    color: #26f7fd;
+    border-right: 5px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+         animation 4s steps(40, end); 
+        /* blinking 1s steps(1 end) infinite;   */
+/* }
+
+@keyframes type {
+    0% { width: 0;}
+    50% {width: 50%;}
+}  */ */
+ 
+
+/* media query */
+  @media (max-width:600px) {
+
+  }
+    
